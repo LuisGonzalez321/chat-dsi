@@ -4,6 +4,10 @@
 
 >Una pequeña aplicación de chat creada con el stack MEAN  
 
+> Integrantes de la aplicación:
+> - Luis Gabriel González López
+> - Manuel David Montalvan 
+> - Lina Magally Moreno Ulloa
 
 # Features
 
