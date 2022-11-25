@@ -12,8 +12,6 @@ function send(req,res){
     message.msm = params.msm;
  
 
-    
-    
     message.save((error,message)=>{
         if(!error){
             if(message){

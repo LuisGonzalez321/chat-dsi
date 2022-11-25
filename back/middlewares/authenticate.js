@@ -1,9 +1,10 @@
 'use strict'
 
-var jwt = require('jwt-simple');
-var moment = require('moment');
-var secret = 'diegoarca';
+const jwt = require('jwt-simple');
+const moment = require('moment');
+const secret = 'diegoarca';
 
+// Te autentica de que seas vos
 exports.auth = function(req,res,next){
     if(!req.headers.authorization){
         return res.status(403).send({message: "La peticion no tiene cabecera de autenticacion"});

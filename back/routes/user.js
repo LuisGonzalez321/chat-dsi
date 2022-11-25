@@ -1,13 +1,13 @@
 'use strict'
 
-var express = require('express');
-var userController = require('../controllers/UserController');
-var auth = require('../middlewares/authenticate');
-var multipart = require('connect-multiparty');
-var path = multipart({uploadDir: './uploads/perfiles'});
+const express = require('express');
+const userController = require('../controllers/UserController');
+const auth = require('../middlewares/authenticate');
+const multipart = require('connect-multiparty');
+const path = multipart({uploadDir: './uploads/perfiles'});
 
 
-var api = express.Router();
+const api = express.Router();
 
 api.post('/registro',userController.registro);
 api.post('/login',userController.login);

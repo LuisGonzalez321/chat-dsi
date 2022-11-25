@@ -4,6 +4,8 @@ var jwt = require('jwt-simple');
 var moment = require('moment');
 var secret = 'diegoarca';
 
+
+// Crea al token
 exports.createToken = function(user){
     var payload = {
         sub: user._id,
@@ -18,3 +20,4 @@ exports.createToken = function(user){
 
     return jwt.encode(payload,secret);
 }
+
